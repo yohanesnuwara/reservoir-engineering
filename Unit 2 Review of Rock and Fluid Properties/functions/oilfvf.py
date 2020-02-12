@@ -10,10 +10,16 @@ def oilfvf(P_bubble, api, Rsb, sg2, temp2, pressure2):
     if pressure2[i] < P_bubble: # use Vazquez-Beggs
       if api <= 30:
         # use Vazquez-Beggs 
+        c1 = 0.0362
+        c2 = 1.0937
+        c3 = 25.7240
         c4 = 4.677E-4
         c5 = 1.751E-5
         c6 = -1.811E-8
       if api <= 30:
+        c1 = 0.0178
+        c2 = 1.187
+        c3 = 23.9310
         c4 = 4.670E-4
         c5 = 1.100E-5
         c6 = 1.337E-9
