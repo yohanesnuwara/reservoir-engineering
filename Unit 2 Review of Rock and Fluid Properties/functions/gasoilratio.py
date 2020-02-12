@@ -1,4 +1,4 @@
-def gasoilratio(pressure2, P_bubble, sg2, api, temp2):
+def gasoilratio(pressure2, P_bubble, sg2, api, temp2, Rsb):
   import numpy as np
   Rs_array = []
 
