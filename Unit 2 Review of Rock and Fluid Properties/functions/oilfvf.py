@@ -16,7 +16,7 @@ def oilfvf(P_bubble, api, Rsb, sg2, temp2, pressure2):
         c4 = 4.677E-4
         c5 = 1.751E-5
         c6 = -1.811E-8
-      if api <= 30:
+      if api > 30:
         c1 = 0.0178
         c2 = 1.187
         c3 = 23.9310
