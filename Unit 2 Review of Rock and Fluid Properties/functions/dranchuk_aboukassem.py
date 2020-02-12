@@ -2,6 +2,7 @@ def dranchuk(T_pr, P_pr):
   # T_pr : calculated pseudoreduced temperature
   # P_pr : calculated pseudoreduced pressure   
   from scipy.optimize import fsolve # non-linear solver
+  import numpy as np
 
   a1 = 0.3265; a2 = -1.0700; a3 = -0.5339; a4 = 0.01569; a5 = -0.05165; a6 = 0.5475
   a7 = -0.7361; a8 = 0.1844; a9 = 0.1056; a10 = 0.6134; a11 = 0.7210
@@ -18,4 +19,4 @@ def dranchuk(T_pr, P_pr):
     return[f1, f2]
 
   solve = fsolve(f, [1, 1]) # initial guess
-return(solve[0], solve[1])
+  return(solve[0], solve[1])
