@@ -15,4 +15,4 @@ def oilcompressibility(pressure2, P_bubble, temp2, api, Rsb, sg2):
       # use Vazquez-Beggs
       coil = ((5 * Rsb) + (17.2 * temp2) - (1180 * sg2) + (12.61 * api) - 1433) / (1E+05 * pressure2[i])
     coil_array.append(float(coil))
-  return(coil)
+  return(coil_array)
