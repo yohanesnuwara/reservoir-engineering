@@ -1,4 +1,5 @@
 def oilfvf(P_bubble, api, Rsb, sg2, temp2, pressure2):
+
   import numpy as np
   # FVF of oil at bubblepoint pressure using Levitan-Murtha
   so = 141.5 / (api + 131.5)
@@ -33,4 +34,4 @@ def oilfvf(P_bubble, api, Rsb, sg2, temp2, pressure2):
       coil = ((5 * Rsb) + (17.2 * temp2) - (1180 * sg2) + (12.61 * api) - 1433) / (1E+05 * pressure2[i])
       Bo = Bo_bubble * np.exp(coil * (P_bubble - pressure2[i]))
     Bo_array.append(float(Bo))
-   return(Bo_array)
+  return(Bo_array)
