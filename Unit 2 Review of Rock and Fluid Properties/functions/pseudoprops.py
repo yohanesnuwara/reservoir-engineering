@@ -1,4 +1,4 @@
-def pseudoprops(temp, sg, x_h2s, x_co2):
+def pseudoprops(temp, pressure, sg, x_h2s, x_co2):
   import numpy as np
   temp = temp + 459.67 # convert to Rankine
 
