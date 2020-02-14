@@ -8,6 +8,6 @@ The book contains 14 units. In this repo, each unit has 3 folders:
 
 *   **data**: Compilation of data in CSV tables for examples and problems.
 *   **functions**: Compilation of functions from the Equations in the book to execute certain purposed calculations.
-*   **notebooks**: Notebooks of worked **examples** and **practice problems**. 
+*   **notebooks**: Jupyter notebooks of worked **examples** and **practice problems**. 
 
 Author: Yohanes Nuwara
