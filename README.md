@@ -1,5 +1,7 @@
 # ipynb notebooks of practices in Fundamental Principles of Reservoir Engineering (Brian Towler, SPE Textbook Series No. 8)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ![brian towler book](https://user-images.githubusercontent.com/51282928/74505368-89a88e80-4f29-11ea-80a6-e563b6237729.jpg)
 
 Original copy of this book can be purchased from [SPE Bookstore](https://store.spe.org/Fundamental-Principles-of-Reservoir-Engineering-P27.aspx)
