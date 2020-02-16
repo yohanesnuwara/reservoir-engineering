@@ -20,7 +20,7 @@ def triangulation(x, y, z, smoothness):
   # Refine data
   #-----------------------------------------------------------------------------
   refiner = tri.UniformTriRefiner(triang)
-  tri_refi, z_test_refi = refiner.refine_field(z, smoothness)
+  tri_refi, z_test_refi = refiner.refine_field(z, subdiv=smoothness)
   
   return(triang, refiner, tri_refi, z_test_refi)
  
