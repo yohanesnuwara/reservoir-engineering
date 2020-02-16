@@ -1,4 +1,6 @@
 def pyramid(y_vals, h):
+  # y_vals: data of isocontours, e.g. areas of isocontours, see Table 4.3 for example
+  # h: difference between isocontours, regular space, see Table 4.3 for example
   import numpy as np
   # sort out a_0 and a_n, calculate the first term, 1/3*delta_z*(a_0+a_n)
 
