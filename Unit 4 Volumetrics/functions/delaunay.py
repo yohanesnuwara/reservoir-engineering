@@ -6,7 +6,7 @@ def triangulation(x, y, z, smoothness):
 
   # x, y, z: coordinates, depth data to be contoured
   # smoothness: value > 3 is already smooth, controls how smooth will the contour be
-
+  import matplotlib.tri as tri
   import numpy as np
   import math
   from scipy.interpolate import griddata
