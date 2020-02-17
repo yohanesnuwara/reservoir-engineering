@@ -8,10 +8,12 @@ Original copy of this book can be purchased from [SPE Bookstore](https://store.s
 
 All examples and problems from the book are worked on Python language.
 
-The book contains **14 units**. In this repo, each unit has 3 folders:
+The book contains **14 units** and **1 Appendix**. In this repo, each unit has 3 folders:
 
 *   **data**: Compilation of data in CSV tables for examples and problems.
 *   **functions**: Compilation of functions from the Equations in the book to execute certain purposed calculations.
 *   **notebooks**: Jupyter notebooks of worked **examples** and **practice problems**. 
+
+**Appendix A** contains values and tabulations for solving certain equations in the book. 
 
 Author: Yohanes Nuwara
