@@ -1,3 +1,5 @@
+# Important Note for Unit 6
+
 There are 6 **solutions** to solve the 1-phase-flow in porous media in Unit 6. 3 of solutions are in [Part 1 notebook](https://github.com/yohanesnuwara/reservoir-engineering/blob/master/Unit%206%20Single-Phase-Fluid%20Flow%20in%20Porous%20Media/notebook/6_examples_part1.ipynb), and the other last 3 solutions in [Part 2 notebook](https://github.com/yohanesnuwara/reservoir-engineering/blob/master/Unit%206%20Single-Phase-Fluid%20Flow%20in%20Porous%20Media/notebook/6_examples_part2.ipynb).
 
 Most of these solutions are worked, except ones that include calculation using van Everdingen and Hurst **Table** in **Appendix**. Those which are not finished yet are:
