@@ -31,6 +31,7 @@ def xy_plot_constant_rate(dataframe, index):
 
 def perm_welltest(m, mu_oil, h, q, Bo, qB):
   "Calculate permeability from well-test analysis"
+  "Applicability: all well-test types EXCEPT MULTIRATE DRAWDOWN TEST, since k = (162.6 * Bo * mu_oil) / (slope * h); q is exceptional"
   # all inputs are in OILFIELD UNITS, result in MILIDARCIES
   # input q = 0 and Bo = 0 if both are UNKNOWN, but rate-Bo is known (usually data presented in rate-Bo)
   # input qB = 0 if both q and Bo are KNOWN
