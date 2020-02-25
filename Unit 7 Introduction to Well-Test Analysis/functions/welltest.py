@@ -75,6 +75,8 @@ def perm_welltest(m, mu_oil, h, q, Bo, qB):
   # c: intercept of plot
   
   import numpy as np
+  
+  m = np.abs(m) # negative slope is made absolute to positive
 
   if h == 0:
     if q == 0 and Bo == 0:
