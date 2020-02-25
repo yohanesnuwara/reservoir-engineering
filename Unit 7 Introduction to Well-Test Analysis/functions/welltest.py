@@ -29,6 +29,41 @@ def xy_plot_constant_rate(dataframe, index):
 
   return(x1, y1, x2, y2, t_finite_acting)
 
+def xyplot_multirate(time, pwf, q, time_change, pi):
+
+  "Create x and y for Horner Plot of Multirate Drawdown Analysis, Limited to only RATE CHANGING TWICE"
+
+  # time: time series in the multirate well test data (NUMPY FORMAT, convert first to np.array(...))
+  # pwf: flowing pressure series in the multirate well test data (NUMPY FORMAT, convert first to np.array(...))
+  # both time and pwf must have SAME DIMENSION
+  # q: rate change (have length of array: 3)
+  # time_changing: time when rate changes (have length of array: 2)
+  # pi: initial pressure, usually available in multirate data as PRESSURE WHEN TIME = 0.
+  
+  import numpy as np
+  
+  y_arr = []
+  Fp_arr = []
+
+  for i in range(len(time)):
+    if time[i] <= time_change[0]:
+      # first rate
+      y = (pi - pwf[i]) / q[0] # the y axis (pi-pwf)/qn
+      Fp = ((q[0] - 0) / q[0]) * np.log10(time[i] - 0) # the x axis, plotting function
+    if time[i] > time_change[0] and time[i] <= time_change[1]:
+      # second rate
+      y = (pi - pwf[i]) / q[1] # the y axis (pi-pwf)/qn
+      Fp = (((q[1] - q[0]) / q[1]) * np.log10(time[i] - time_change[0])) + (((q[0] - 0) / q[1]) * np.log10(time[i] - 0)) # the x axis, plotting function
+    if time[i] > time_change[1]:
+      # third rate
+      y = (pi - pwf[i]) / q[2] # the y axis (pi-pwf)/qn
+      Fp = (((q[2] - q[1]) / q[2]) * np.log10(time[i] - time_change[1])) + (((q[1] - q[0]) / q[2]) * np.log10(time[i] - time_change[0])) + (((q[0] - 0) / q[2]) * np.log10(time[i] - 0)) # the x axis, plotting function
+    
+    y_arr.append(float(y))
+    Fp_arr.append(float(Fp))
+  
+  return(Fp_arr, y_arr)
+
 def perm_welltest(m, mu_oil, h, q, Bo, qB):
   "Calculate permeability from well-test analysis"
   "Applicability: all well-test types EXCEPT MULTIRATE DRAWDOWN TEST, since k = (162.6 * Bo * mu_oil) / (slope * h); q is exceptional"
