@@ -1,4 +1,5 @@
 def regression(x, y): 
+    # x, y must be in NUMPY ARRAY
     "Linear Regression"
     import numpy as np
     # number of observations/points 
