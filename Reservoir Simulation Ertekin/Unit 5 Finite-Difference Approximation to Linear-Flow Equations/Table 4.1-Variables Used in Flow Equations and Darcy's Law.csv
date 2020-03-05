@@ -1,0 +1,28 @@
+Quantity,Symbol,Oilfield,Metric,Conversion factor
+Length,"x, y, z, r",ft,m,0.3048
+Area,A,ft2,m2,0.09290304
+Permeability,k,darcy,µm2,0.9869233
+Phase viscosity,µ,cp,Pa.s,0.001
+Gas FVF,Bg,RB/scf,m3/std m3,5.5519314
+Liquid FVF,"Bo, Bw",RB/STB,m3/std m3,1
+Solution-gas/oil ratio,Rs,scf/STB,std m3/std m3,0.1801175
+Pressure,"p, ? ",psia,kPa,6.894757
+Pressure gradient,"??, ?p",psi/ft,kPa/m,22.62059
+Phase gravity,?,psi/ft,kPa/m,22.62059
+Gas flow rate,"qsc, qgsc",scf/d,std m3/d,0.0286364
+Liquid flow rate,"qsc, qosc, qwsc",STB/d,std m3/d,0.1589873
+Volumetric velocity,"u, q/A",RB/(d-ft2),m3/(d-m2),1.7103717
+Gridblock bulk volume,Vb,ft3,m3,0.02831685
+Phase density,?,lbm/ft3,kg/m3,16.01846
+Gravitational constant,g,32.174 ft/s2,9.8066352 m/s2,0.3048
+Compressibility,c,psi-1,kPa-1,0.1450377
+Absolute temperature,T,deg R (Rankine),K (Kelvin),0.56
+Relative permeability,kr,fraction,fraction,1
+Porosity,?,fraction,fraction,1
+Phase saturation,S,fraction,fraction,1
+Compressibility factor,Z,dimensionless,dimensionless,1
+Time,t,day,day,1
+Angle,?,rad,rad,1
+Transmissibility conversion factor,?c,1.127,8.64E-05,
+Gravity conversion factor,?c,2.16E-04,1.00E-03,
+Volume conversion factor,?c,5.614583,1,
