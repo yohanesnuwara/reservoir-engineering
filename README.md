@@ -1,4 +1,4 @@
-# ipynb notebooks of practices in Fundamental Principles of Reservoir Engineering (Brian Towler, SPE Textbook Series No. 8)
+# ipynb notebooks of practices in *Fundamental Principles of Reservoir Engineering* (Brian Towler, SPE Textbook Series No. 8)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -15,6 +15,12 @@ The book contains **14 units** and **1 Appendix**. In this repo, each unit has 3
 *   **notebooks**: Jupyter notebooks of worked **examples** and **practice problems**. 
 
 **Appendix A** contains values and tabulations for solving certain equations in the book. 
+
+### Also in this repository, ipynb notebook solutions to Turgay Ertekin's SPE Textbook Series No. 7 *Basic Applied Reservoir Simulation*: See folder [Reservoir Simulation Ertekin](https://github.com/yohanesnuwara/reservoir-engineering/tree/master/Reservoir%20Simulation%20Ertekin)
+
+<div>
+<img src="https://image.isu.pub/170925223915-1537dfb67d3ecdfbd69b8ff920484e69/jpg/page_1.jpg" width="300"/>
+</div>
 
 Author: Yohanes Nuwara
 
