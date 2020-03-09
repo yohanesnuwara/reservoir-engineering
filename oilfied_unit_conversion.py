@@ -1,7 +1,7 @@
 """"
 1 API 		= 141.4 / (131.5 + API) g/cm3
 1 atm 		= 1.013250E+05 Pa
-1 bbl 		= 1.589873E-01 m
+1 bbl 		= 1.589873E-01 m3
 1 cp 		= 1E-03 Pa.s
 1 darcy 	= 9.869233 micro.m2
 1 dyne 		= 1E-02 mN
