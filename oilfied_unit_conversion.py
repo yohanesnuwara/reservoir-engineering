@@ -26,4 +26,8 @@
 1 mile 		= 1.609344 km
 1 sq mile 	= 2.589988 km2
 
+1 scf = 1 ft3
+1 stb = 1 bbl
+1 Tscf = 1E+03 Bscf = 1E+06 MMscf = 1E+09 Mscf = 1E+12 scf
+1 MMstb = 1E+03 Mstb = 1E+06 stb
 """"
