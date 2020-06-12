@@ -14,6 +14,10 @@ The book contains **14 units** and **1 Appendix**. In this repo, each unit has 3
 * `functions`: compilation of functions from the Equations in the book to execute certain purposed calculations
 * `notebooks`: Jupyter notebooks of worked examples and practice problems
 
+|**Chapters**|**Link**|
+|:--:|:--:|
+
+
 **Appendix A** contains values and tabulations for solving certain equations in the book. 
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
