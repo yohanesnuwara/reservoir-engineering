@@ -32,4 +32,9 @@ The book contains **14 units** and **1 Appendix**. In this repo, each unit has 3
 
 **Appendix A** contains values and tabulations for solving certain equations in the book. 
 
+## External Tools that I Use
+
+* [**Online OCR**](https://www.onlineocr.net/): Optical Character Recognition (OCR) online to convert paper Tables from the book (printed) to a digital Excel spreadsheet 
+* **Microsoft Excel**: to save the digitized Table as a CSV format 
+
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
