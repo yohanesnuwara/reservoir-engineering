@@ -37,4 +37,26 @@ The book contains **14 units** and **1 Appendix**. In this repo, each unit has 3
 * [**Online OCR**](https://www.onlineocr.net/): Optical Character Recognition (OCR) online to convert paper Tables from the book (printed) to a digital Excel spreadsheet 
 * **Microsoft Excel**: to save the digitized Table as a CSV format 
 
+## Citation BibTex
+
+If you use this repository for a certain purpose, please make this citation
+
+> Y. Nuwara, reservoir-engineering, (2020), GitHub repository, https://github.com/yohanesnuwara/reservoir-engineering
+
+BibTex registry:
+
+```
+@misc{Nuwara2020,
+  author = {Nuwara, Y.},
+  title = {reservoir-engineering},
+  year = {2020},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/yohanesnuwara/reservoir-engineering}},
+  commit = {b1a8a2e3de8a9f53febf5ca8452e564bc34c9c76}
+}
+```
+
+## License
+
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
