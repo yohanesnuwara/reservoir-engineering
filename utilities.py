@@ -1,7 +1,7 @@
 def simple_linear_regression_traditional(x, y):
   "Traditional linear regression with B0 intercept, B1 slope"
   import numpy as np
-  x = np.array(x); y = np.array(y); x_test = np.array(x_test)
+  x = np.array(x); y = np.array(y)
   mean_x = np.mean(x)
   mean_y = np.mean(y)
   err_x = x - mean_x
@@ -18,7 +18,7 @@ def simple_linear_regression_advanced(x, y):
   "Covariance method linear regression with B0 intercept, B1 slope"
   import numpy as np
   import statistics as stat
-  x = np.array(x); y = np.array(y); x_test = np.array(x_test)
+  x = np.array(x); y = np.array(y)
   mean_x = np.mean(x)
   mean_y = np.mean(y)
   stdev_x = stat.stdev(x)
