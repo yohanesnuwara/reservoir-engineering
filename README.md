@@ -57,7 +57,7 @@ BibTex registry:
 }
 ```
 
-## Friends who Helps Completing the Missing Puzzles
+## Friends who Helped Completing the Missing Puzzles
 
 ## License
 
