@@ -1,3 +1,8 @@
+"""
+Script to solve z-factor and gas density at the same time
+Using Dranchuk and Aboukassem (1975)
+"""
+
 def dranchuk(T_pr, P_pr):
   # T_pr : calculated pseudoreduced temperature
   # P_pr : calculated pseudoreduced pressure   
@@ -19,4 +24,4 @@ def dranchuk(T_pr, P_pr):
     return[f1, f2]
 
   solve = fsolve(f, [1, 1]) # initial guess
-  return(solve[0], solve[1])
+  return(solve[0], solve[1]) # result is density, z-factor
