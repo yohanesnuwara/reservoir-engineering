@@ -6,7 +6,7 @@ def gasfvf(z, temp, pressure):
   Bg = 0.0282793 * z * temp / pressure 
   return(Bg)
 
-def gasfvf(unit='unit1', temp=186, pressure=2000):
+def gasfvf2(unit='unit1', temp=186, pressure=2000):
   """
   Gas FVF calculated in other units
   unit: choice of units (unit1: RB/scf, unit2: res m3/std m3)
