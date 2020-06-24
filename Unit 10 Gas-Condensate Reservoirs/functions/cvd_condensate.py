@@ -34,60 +34,39 @@ def cvd_condensate(z, z2, temp, p, Gp, Np, Vo):
     delta_ngj_to_nt1 = 0
 
     # empty arrays for appending
-    Vtoj_arr = []
-    ntj_nt1_arr = []
-    Vtoj_Vtgj_arr = []
-    Vtgj_arr = []
-    delta_Vtgj_arr = []
-    ngj_nt1_arr = []
-    delta_ngj_to_ngj_arr = []
-    delta_ngj_to_nt1_arr = []
+    Rvj_arr = []
     delta_Gpj_arr = []
     delta_Npj_arr = []
     Gfgj_arr = []
     Nfgj_arr = []
     Gj_arr = []
     Nj_arr = []
-    Gfoj_arr = []
-    Nfoj_arr = []
-    Boj_arr = []
-    Bgj_arr = []
-    Rsj_arr = []
-    Rvj_arr = []
 
     for i in range(len(p) - 1):
 
         # Eq 10.13
         Vtoj = Vo_j[i] * Vtg1
-        Vtoj_arr.append(Vtoj)
 
         # Eq 10.14
         ntj_nt1 = ntj_nt1 - delta_ngj_to_nt1
-        ntj_nt1_arr.append(ntj_nt1)
 
         # Eq 10.15
         Vtoj_Vtgj = ((Vtg1 * z2_j[i] * p[0]) / (z2_j[0] * p[i])) * (ntj_nt1)
-        Vtoj_Vtgj_arr.append(Vtoj_Vtgj)
 
         # Eq 10.16
         Vtgj = Vtoj_Vtgj - Vtoj
-        Vtgj_arr.append(Vtgj)
 
         # Eq 10.17
         delta_Vtgj = Vtoj_Vtgj - Vtg1
-        delta_Vtgj_arr.append(delta_Vtgj)
 
         # Eq 10.18
         ngj_nt1 = (Vtgj * z_j[0] * p[i]) / (z_j[i] * Vtg1 * p[0])
-        ngj_nt1_arr.append(ngj_nt1)
 
         # Eq 10.19
         delta_ngj_to_ngj = delta_Vtgj / Vtgj
-        delta_ngj_to_ngj_arr.append(delta_ngj_to_ngj)
 
         # Eq 10.20
         delta_ngj_to_nt1 = delta_ngj_to_ngj * ngj_nt1
-        delta_ngj_to_nt1_arr.append(delta_ngj_to_nt1)
 
         if i == 0:
             # Eq 10.21
@@ -136,23 +115,18 @@ def cvd_condensate(z, z2, temp, p, Gp, Np, Vo):
 
         # Eq 10.27
         Gfoj = Gj - Gfgj
-        Gfoj_arr.append(Gfoj)
 
         # Eq 10.28
         Nfoj = Nj - Nfgj
-        Nfoj_arr.append(Nfoj)
 
         # Eq 10.29
         Boj = Vtoj / Nfoj
-        Boj_arr.append(Boj)
 
         # Eq 10.30
         Bgj = Vtgj / Gfgj
-        Bgj_arr.append(Bgj)
 
         # Eq 10.31
         Rsj = Gfoj / Nfoj
-        Rsj_arr.append(Rsj)
 
         # Eq 10.32
         Rvj = (Nfgj / Gfgj) * 1E+06  # result in STB/scf
