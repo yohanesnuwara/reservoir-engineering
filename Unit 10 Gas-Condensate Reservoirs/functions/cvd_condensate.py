@@ -55,7 +55,7 @@ def cvd_condensate(z, z2, temp, p, Gp, Np, Vo):
     Rsj_arr = []
     Rvj_arr = []
 
-    for i in range(len(j) - 1):
+    for i in range(len(p) - 1):
 
         # Eq 10.13
         Vtoj = Vo_j[i] * Vtg1
