@@ -63,7 +63,7 @@ BibTex registry:
 
 Thanks ... for ...
 
-* **Mark Burgoyne**, (Principal Reservoir Engineer in Santos), helping with solution to solve numerically the transient flow problems (Chapter 5) based on [Klins et al (1988) SPE paper](https://github.com/yohanesnuwara/reservoir-engineering/blob/master/Papers/SPE-15433-PA.pdf). Mark's [Monograph-20-Examples](https://github.com/vinomarkus/Monograph-20-Examples) repo has inspired me to create this repo. 
+* **Mark Burgoyne**, (Principal Reservoir Engineer in Santos), helping with solution to solve numerically the transient flow problems (Chapter 5) based on [Klins et al (1988) SPE-15433-PA paper](https://www.onepetro.org/journal-paper/SPE-15433-PA). Mark's [Monograph-20-Examples](https://github.com/vinomarkus/Monograph-20-Examples) repo has inspired me to create this repo. 
 
 ## License
 
