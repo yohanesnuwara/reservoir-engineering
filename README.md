@@ -1,6 +1,8 @@
-# IPython notebooks of practices in Brian Towler's SPE *Fundamental Principles of Reservoir Engineering* textbook and other RE books
+# Python Worked Examples and Problems of Worldwide Reservoir Engineering Textbooks
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## SPE Textbook Vol. 8 *Fundamental Principles of Reservoir Engineering* by Brian F. Towler
 
 ![brian towler book](https://user-images.githubusercontent.com/51282928/74505368-89a88e80-4f29-11ea-80a6-e563b6237729.jpg)
 
