@@ -63,7 +63,7 @@ BibTex registry:
 
 Thanks ... for ...
 
-* **Mark Burgoyne**, (Principal Reservoir Engineer in Santos), helping with solution to solve numerically the transient flow problems (Chapter 5) based on [Klins et al (1988) SPE-15433-PA paper](https://www.onepetro.org/journal-paper/SPE-15433-PA). Mark's [Monograph-20-Examples](https://github.com/vinomarkus/Monograph-20-Examples) repo has inspired me to create this repo. 
+* **Mark Burgoyne**, (Principal Reservoir Engineer in Santos), helping with solution to solve numerically the transient flow problems (Chapter 5) based on [Klins et al (1988) SPE-15433-PA paper](https://www.onepetro.org/journal-paper/SPE-15433-PA). The code to calculate the aquifer flow [here](https://github.com/yohanesnuwara/reservoir-engineering/blob/master/Unit%206%20Single-Phase-Fluid%20Flow%20in%20Porous%20Media/functions/aquifer_flow.py). Mark's [Monograph-20-Examples](https://github.com/vinomarkus/Monograph-20-Examples) repo has inspired me to create this repo. 
 
 ## License
 
