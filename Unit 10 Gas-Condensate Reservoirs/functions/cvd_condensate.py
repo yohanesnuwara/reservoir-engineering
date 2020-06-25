@@ -7,12 +7,12 @@ def cvd_condensate(z, z2, temp, p, Gp, Np, Vo):
     z: measured gas-phase compressibility factor (array)
     z2: measured two-phase compressibility factor (array)
     p: measured pressure (array)
-    Gp: gas produced in the PVT cell
-    Np: condensate produced in the PVT cell
+    Gp: gas produced in the PVT cell, in Mscf
+    Np: condensate produced in the PVT cell, in STB
     Vo: condensate volume in the PVT cell
     """
 
-    z_j = z; Gp_j = Gp; Np_j = Np; z2_j = z2; Vo_j = Vo
+    z_j = z; Gp_j = Gp * 1E+3; Np_j = Np; z2_j = z2; Vo_j = Vo
 
     # calculate gas FVF (Bg)
     Bg = (0.00503676 * z_j * (temp + 460)) / p  # in RB/scf
