@@ -1,6 +1,5 @@
 "Code Written by Mark Burgoyne (Santos), with permission, @vinomarkus in GitHub"
 
-
 # Algorithm based on SPE15433, M.A Klins, A.J. Bouchard, C.L. Cable, 1988
 # Note: Not using the Tcross function to evakuate whether in infinite or finite acting as this can result in
 # inconsistencies. Instead simply evauate both and chose the highest value for Pd or lowest value for Qd
@@ -11,6 +10,7 @@ import math
 import mpmath
 
 def csch(x):
+    import mpmath
     if x > 100:
         return 0
     else:
@@ -22,6 +22,11 @@ def beta(b, rd):
 # Solution for constant Terminal Rate at aquifer inner boundary
 
 def pd(rd, td):
+    
+    from scipy.special import j1
+    from scipy.special import j0
+    import math
+    
     if td < 0.01:
         return 2 * td ** 0.5 / 3.14159265359
     else:
@@ -46,9 +51,14 @@ def pd(rd, td):
                                  (beta2 ** 2) * ((J1Beta2rd ** 2) - (J1Beta2 ** 2))))
     return max(pd_inf, pd_fin)
 
-
 # Solution for constant Terminal Pressure at aquifer inner boundary
+
 def qd(rd, td):
+    
+    from scipy.special import j1
+    from scipy.special import j0
+    import math
+    
     if td < 0.01:
         return 2 * td ** 0.5 / 3.14159265359 ** 0.5
     else:
