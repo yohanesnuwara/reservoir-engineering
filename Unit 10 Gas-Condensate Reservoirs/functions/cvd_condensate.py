@@ -10,6 +10,9 @@ def cvd_condensate(z, z2, temp, p, Gp, Np, Vo):
     Gp: gas produced in the PVT cell, in Mscf
     Np: condensate produced in the PVT cell, in STB
     Vo: condensate volume in the PVT cell
+    
+    Outputs:
+    Rv: in STB/MMscf
     """
 
     z_j = z; Gp_j = Gp * 1E+3; Np_j = Np; z2_j = z2; Vo_j = Vo
