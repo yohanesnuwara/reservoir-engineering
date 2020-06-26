@@ -12,6 +12,9 @@ def cvd_condensate(z, z2, temp, p, Gp, Np, Vo):
     Vo: condensate volume in the PVT cell
     
     Outputs:
+    Bo: in RB/STB
+    Bg: in RB/Mscf
+    Rs: in scf/STB
     Rv: in STB/MMscf
     """
 
@@ -37,13 +40,16 @@ def cvd_condensate(z, z2, temp, p, Gp, Np, Vo):
     delta_ngj_to_nt1 = 0
 
     # empty arrays for appending
-    Rvj_arr = []
     delta_Gpj_arr = []
     delta_Npj_arr = []
     Gfgj_arr = []
     Nfgj_arr = []
     Gj_arr = []
     Nj_arr = []
+    Bo_arr = []
+    Bg_arr = []
+    Rs_arr = []
+    Rv_arr = []
 
     for i in range(len(p) - 1):
 
@@ -124,16 +130,19 @@ def cvd_condensate(z, z2, temp, p, Gp, Np, Vo):
 
         # Eq 10.29
         Boj = Vtoj / Nfoj
+        Bo_arr.append(Boj) # result in RB/STB
 
         # Eq 10.30
         Bgj = Vtgj / Gfgj
+        Bg_arr.append(Bgj) # result in RB/Mscf
 
         # Eq 10.31
         Rsj = Gfoj / Nfoj
+        Rs_arr.append(Rsj) # result in scf/STB
 
         # Eq 10.32
-        Rvj = (Nfgj / Gfgj) * 1E+06  # result in STB/scf
-        Rvj_arr.append(Rvj)
-
-    Rv = Rvj_arr
-    return(Rv)
+        Rvj = (Nfgj / Gfgj) * 1E+06  # result in STB/Mscf
+        Rv_arr.append(Rvj)
+    
+    Bo = Bo_arr; Bg = Bg_arr; Rs = Rs_arr; Rv = Rv_arr
+    return(Bo, Bg, Rs, Rv)
