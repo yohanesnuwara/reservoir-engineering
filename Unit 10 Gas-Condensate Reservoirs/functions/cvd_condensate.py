@@ -13,9 +13,9 @@ def cvd_condensate(z, z2, temp, p, Gp, Np, Vo):
     
     Outputs:
     Bo: in RB/STB
-    Bg: in RB/Mscf
+    Bg: in RB/scf
     Rs: in scf/STB
-    Rv: in STB/MMscf
+    Rv: in STB/scf
     """
 
     z_j = z; Gp_j = Gp * 1E+3; Np_j = Np; z2_j = z2; Vo_j = Vo
@@ -134,14 +134,14 @@ def cvd_condensate(z, z2, temp, p, Gp, Np, Vo):
 
         # Eq 10.30
         Bgj = Vtgj / Gfgj
-        Bg_arr.append(Bgj) # result in RB/Mscf
+        Bg_arr.append(Bgj) # result in RB/scf
 
         # Eq 10.31
         Rsj = Gfoj / Nfoj
         Rs_arr.append(Rsj) # result in scf/STB
 
         # Eq 10.32
-        Rvj = (Nfgj / Gfgj) * 1E+06  # result in STB/Mscf
+        Rvj = (Nfgj / Gfgj)  # result in STB/scf
         Rv_arr.append(Rvj)
     
     Bo = Bo_arr; Bg = Bg_arr; Rs = Rs_arr; Rv = Rv_arr
